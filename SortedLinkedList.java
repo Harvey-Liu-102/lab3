@@ -49,11 +49,11 @@ public class SortedLinkedList
         Node node = head;
         while (node != null)
         {
-            if (node == head && data <= node.getData())
+            if (node == head && data <= node.getData()) //insert at head
             {
                 return null;
             }
-            else if (node.getNext() == null && data >= node.getData() || data >= node.getData() && data <= node.getNext().getData())
+            else if (node.getNext() == null && data >= node.getData()/*insert at tail*/|| data >= node.getData() && data <= node.getNext().getData()/*insert in middle*/)
             {
                 return node;
             }
