@@ -59,7 +59,7 @@ public class SortedLinkedList
             }
             node = node.getNext();
         }
-        return null;
+        return null; //empty list, so insert at beginning
     }
 
     @Override
