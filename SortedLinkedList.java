@@ -49,7 +49,7 @@ public class SortedLinkedList
         Node node = head;
         while (node != null)
         {
-            if (node == head && data <= node.getData()) //insert at head
+            if (node == head && data <= node.getData()) //insert at beginning
             {
                 return null;
             }
